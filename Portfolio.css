@@ -1,9 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
+    background-color: #EAEFEF;
+}
+
+.dark{
+    background-color: #1E2424;
+}
+
+.darkImg{
+    filter: brightness(0) invert(1);
+}
+
+.light{
     background-color: #EAEFEF;
 }
 
@@ -58,6 +71,16 @@ body {
     color: inherit;
     text-decoration: none;
     font-size: large;
+    font-weight: 700;
+}
+
+.toggle button{
+    padding: 0.7rem;
+    border: none;
+    border-radius: 50%;
+    background-color: gray;
+    font-size: larger;
+    cursor: pointer;
 }
 
 /* main */
@@ -75,6 +98,10 @@ body {
     gap: 1rem;
 }
 
+.profile h1{
+    font-weight: 700;
+}
+
 .img{
     height: 150px;
     width: 150px;
@@ -88,7 +115,6 @@ body {
     font-size: large;
     text-align: center;
     margin-top: 1rem;
-    font-family:cursive;
 }
 
 
@@ -103,7 +129,6 @@ body {
 
 .aboutme h2{
     text-align: center;
-    font-family: cursive;
 }
 
 .aboutme p{
@@ -120,7 +145,6 @@ body {
 }
 
 .skills h2{
-    font-family: cursive;
     text-align: center;
 }
 
@@ -145,7 +169,6 @@ body {
 }
 
 .Projects h2{
-    font-family: cursive;
     text-align: center;
 }
 
@@ -178,9 +201,14 @@ body {
     text-align: center;
 }
 
-.pd h2,h3,h4{
-    font-family: 'Courier New', Courier, monospace;
+.pd button{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #EAEFEF;
+    font-weight: 700;
 }
+
 
 /* Education & Experience */
 
@@ -200,10 +228,6 @@ body {
     gap: 1rem;
 }
 
-.edu h2,.exp h2{
-    font-family: cursive;
-}
-
 /* contact */
 .contact{
     padding: 1rem;
@@ -216,7 +240,6 @@ body {
 
 .contact h2{
     text-align: center;
-    font-family: cursive;
     margin: 0.5rem;
 }
 
@@ -239,6 +262,7 @@ footer{
 
     .navbar{
         justify-content: center;
+        gap: 20px;
     }
 
     .nav{
@@ -262,12 +286,22 @@ footer{
         display: none;
     }
 
+    .toggle button{
+        padding: 0.5rem;
+    }
+
     .profile{
         height: 200px;
         width: 1200px;
         margin: 0 auto;
         flex-direction: row;
         gap: 20px;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .profile:hover{
+        transform: perspective(900px) rotateY(5deg) rotateX(5deg);
     }
 
     .aboutme,.skills{
@@ -288,8 +322,12 @@ footer{
     }
 
     .p{
-        height: 400px;
-        width: 400px;
+        height: 450px;
+        width: 450px;
+    }
+
+    .pi img{
+        width: 30%;
     }
 
     .pp{
@@ -299,4 +337,15 @@ footer{
         flex-direction: row;
     }
 
+    .EduAndExp{
+        height: 250px;
+        width: 900px;
+        margin: 50px auto;
+    }
+
+    .contact{
+        height: 100px;
+        width: 900px;
+        margin: 50px auto;
+    }
 }
