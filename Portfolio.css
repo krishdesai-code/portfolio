@@ -309,6 +309,14 @@ footer{
         margin: 50px auto;
     }
 
+    .aboutme:hover{
+        border: 1px solid gray;
+    }
+
+    .skills:hover{
+        border: 1px solid gray;
+    }
+
     .Projects{
         width: 1000px;
         margin: 50px auto;
@@ -324,6 +332,8 @@ footer{
     .p{
         height: 450px;
         width: 450px;
+        border: none;
+        background-color: #FAFAFA;
     }
 
     .pi img{
@@ -336,6 +346,12 @@ footer{
         justify-content: center;
         flex-direction: row;
     }
+    
+    .p:hover{
+        background-color: whitesmoke;
+        cursor: pointer;
+        border: 1px solid grey;
+    }
 
     .EduAndExp{
         height: 250px;
@@ -343,9 +359,17 @@ footer{
         margin: 50px auto;
     }
 
+    .EduAndExp:hover{
+        border: 1px solid gray;
+    }
+
     .contact{
         height: 100px;
         width: 900px;
         margin: 50px auto;
+    }
+
+    .contact:hover{
+        border: 1px solid gray;
     }
 }
